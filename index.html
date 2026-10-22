@@ -12,63 +12,103 @@
 </head>
 
 <body>
+    <img src="images/image.png" class="layout-overlay" alt="" />
     <header>
-        <nav>
-            <a href="#top">главная</a>
-            <a href="#lots" class="dot">посмотреть лоты</a>
-            <a href="#about" class="dot">об аукционе</a>
+        <nav class="nav-menu">
+            <a href="#top" class="nav-menu-item no_inline">
+                главная
+            </a>
+            <a href="#lots" class="nav-menu-item dot">
+                посмотреть лоты
+            </a>
+            <a href="#about" class="nav-menu-item dot">
+                об аукционе
+            </a>
         </nav>
-        <img src="images/logo-black.svg" alt="Логотип оно тебе не надо" class="logo" />
-        <address>
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            <p>наб. Принсенграхт 263-265, Амстердам</p>
+        <a><img src="images/logo-black.svg" alt="Логотип оно тебе не надо" class="logo"></a>
+        <address class="header-adress">
+            <a href="tel:+99995555555" class="adress-block">
+                +9 999 555 5555
+            </a>
+            <a href="mailto:info@sobaka.ge" class="adress-block">
+                info@sobaka.ge
+            </a>
+            <p class="adress-block no_inline">
+                наб. Принсенграхт 263-265, Амстердам
+            </p>
         </address>
     </header>
     <main>
         <section class="cover" id="top">
-            <div>
-                <h1>оно</h1>
-                <h1>тебе</h1>
-                <h1>надо</h1>
-            </div>
+            <div class="overlay"></div>
+            <h1 class="cover-title">
+                <span class="cover-text">оно</span>
+                <span class="cover-text">тебе</span>
+                <span class="cover-text">надо</span>
+            </h1>
             <div class="description">
-                <p>Аукцион вещей, в которые никто не верил</p>
-                <button>Сделать ставку</button>
+                <p class="description-text">
+                    Аукцион вещей, в которые никто не верил
+                </p>
+                <button class="description-button">
+                    Сделать ставку
+                </button>
             </div>
         </section>
         <section class="lots" id="lots">
-            <h2>лоты</h2>
-            <div class="card-list">
-                <div class="card">
-                    <img src="images/card-lot-01.jpg" alt="Лот: фильм режиссёра, который бросил киношколу" />
-                    <h3>Фильм режиссёра, который бросил киношколу</h3>
-                    <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что
-                        режиссёр — Пол Томас Андерсон?</p>
-                </div>
-                <div class="card">
-                    <img src="images/card-lot-02.jpg"
-                        alt="Лот: Книга, где описан один скучный день из жизни рекламного агента" />
-                    <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
-                    <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский.
-                        В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с
-                        античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на
-                        «Улисса» Джеймса Джойса?</p>
-                </div>
-                <div class="card">
-                    <img src="images/card-lot-03.jpg"
-                        alt="Лот: Картина, которую повторит даже 5-летний сын маминой подруги" />
-                    <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                    <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку.
-                        Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это —
-                        одна из революционных работ Кандинского?</p>
-                </div>
-            </div>
-            <a href="#">посмотреть больше</a>
+            <h2 class="lots-title">лоты</h2>
+            <ul class="card-list">
+                <li class="card-list-item">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_film">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">
+                                Фильм режиссёра, который бросил киношколу
+                            </h3>
+                            <p class="card-text">
+                                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                            </p>
+                        </article>
+                    </a>
+                </li>
+                <li class="card-list-item">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_book">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">
+                                Книга, где описан один скучный день из жизни рекламного агента
+                            </h3>
+                            <p class="card-text">
+                                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
+                                древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории
+                                литературы, начиная с античных времён. И это всё накладывается на эпическую поэму
+                                Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                            </p>
+                        </article>
+                    </a>
+                </li>
+                <li class="card-list-item">
+                    <a href="#" class="card-link">
+                        <article class="card card_type_picture">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">
+                                Картина, которую повторит даже 5-летний сын маминой подруги
+                            </h3>
+                            <p class="card-text">
+                                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+                                инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили,
+                                если бы не знали, что это — одна из революционных работ Кандинского?
+                            </p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="lots-more">посмотреть больше</a>
         </section>
         <section class="about" id="about">
             <div class="logo-round">
-                <img src="images/logo-white.svg">
+                <img src="images/logo-white.svg" alt="logo">
             </div>
             <div class="about_column">
                 <h2>Об аукционе</h2>
@@ -92,17 +132,19 @@
         <address>
             <a href="tel:+99995555555">+9 999 555 5555</a>
             <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            <p>наб. Принсенграхт 263-265, Амстердам</a>
+            <p>наб. Принсенграхт 263-265, Амстердам</p>
         </address>
         <nav>
             <a href="#top">главная</a>
             <a href="#lots">посмотреть лоты</a>
-            <a href="#about">об аукционе</p>
+            <a href="#about">об аукционе</a>
         </nav>
         <div class="socials">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="YouTube"><img src="images/yt.svg"></a>
-            <a href="https://vk.ru/index.php" aria-label="VK"><img src="images/vk.svg"></a>
-            <a href="https://ru.pinterest.com/" aria-label="Pinterest"><img src="images/pinterest.svg"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="YouTube"><img src="images/yt.svg"
+                    alt="YT logo"></a>
+            <a href="https://vk.ru/index.php" aria-label="VK"><img src="images/vk.svg" alt="VK logo"></a>
+            <a href="https://ru.pinterest.com/" aria-label="Pinterest"><img src="images/pinterest.svg"
+                    alt="pinterest logo"></a>
         </div>
     </footer>
 
