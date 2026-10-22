@@ -48,7 +48,7 @@ nav a {
 }
 
 .layout-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -156,3 +156,81 @@ address p {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.lots {
+    height: 723px;
+    width: 1052px;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
+.lots h1 {
+    margin-left: 40px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+.card-section {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.card {
+    height: 596px;
+    width: 334px;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    margin:0px;
+}
+.card img {
+    position: absolute;
+    height: 596px;
+    width: 334px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    z-index: -1;
+}
+.card h3 {
+    color: white;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.card p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.lots a {
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
