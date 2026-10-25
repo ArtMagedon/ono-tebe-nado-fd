@@ -22,7 +22,7 @@ header {
     align-items: center;
     gap: 13px;
     list-style: circle;
-    
+
     font-size: 18px;
     line-height: 22px;
     white-space: nowrap;
@@ -30,7 +30,7 @@ header {
 
 /* Пункт меню */
 .nav-menu-item {
-    margin-left:20px;
+    margin-left: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
@@ -70,8 +70,6 @@ header {
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
 }
-
-
 
 /* =============== Обложка ================= */
 /* Обложка */
@@ -414,10 +412,10 @@ footer {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
-.active{
+.active {
     text-decoration: none;
     list-style: none;
-    margin-left:0px;
+    margin-left: 0px;
 }
 /* Соцсети в подвале */
 footer .socials {
