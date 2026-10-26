@@ -37,6 +37,10 @@ header {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
+.nav-menu-item:nth-child(1) {
+    list-style: none;
+    margin-left: 0px;
+}
 
 /* Логотип */
 .logo {
@@ -70,7 +74,9 @@ header {
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
 }
-
+.adress-block-adress {
+    text-decoration: none;
+}
 /* =============== Обложка ================= */
 /* Обложка */
 .cover {
@@ -119,18 +125,18 @@ header {
 }
 
 /* Первое слово: слева */
-.cover-text-first {
+.aligned-text_left {
     text-align: left;
 }
 
 /* Второе слово: по центру */
-.cover-text-second {
+.aligned-text_center {
     margin-top: 20px;
 
     text-align: center;
 }
 
-.ccover-text-third {
+.aligned-text_right {
     margin-top: 20px;
 
     text-align: right;
@@ -215,10 +221,8 @@ header {
 /* Ссылка на карточку */
 .card-link {
     display: block;
-    min-height: 596px;
 
     text-decoration: none;
-
     color: inherit;
 }
 
@@ -404,7 +408,7 @@ footer {
 
 /* Пункт меню подвала */
 .footer-menu-item {
-    list-style: circle;
+    list-style: none;
 
     font-weight: 400;
     font-size: 18px;
@@ -414,8 +418,6 @@ footer {
 }
 .active {
     text-decoration: none;
-    list-style: none;
-    margin-left: 0px;
 }
 /* Соцсети в подвале */
 footer .socials {
